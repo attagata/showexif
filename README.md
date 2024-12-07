@@ -1,10 +1,63 @@
-# showexif
 
-## Python - Show Exif Metadata from a image/video file.
+# ShowExif
 
+**ShowExif** is a Python tool to extract and display Exif metadata from image and video files.
 
+## Features
+
+- Extract detailed Exif metadata from image and video files.
+- Compatible with a wide range of file formats, including MOV and MP4.
+- Provides detailed metadata, including file properties, GPS data, and more.
+
+## Requirements
+
+- Python 3.6 or higher
+- [ExifTool](https://exiftool.org/), a dependency for extracting metadata.
+
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/attagata/showexif.git
+   cd showexif
+   ```
+
+2. **Install Required Python Packages**:
+   Ensure you have `pip` installed, then install required dependencies (if any). For example:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   *(Add a `requirements.txt` file if your script uses specific Python libraries.)*
+
+3. **Install ExifTool**:
+   - For **Linux**:
+     ```bash
+     sudo apt-get install libimage-exiftool-perl
+     ```
+   - For **MacOS** (via Homebrew):
+     ```bash
+     brew install exiftool
+     ```
+   - For **Windows**:
+     Download and install [ExifTool](https://exiftool.org/).
+
+## Usage
+
+### Basic Command
+Run the script with the path to your image or video file:
+```bash
+python3 showexif.py --image_path <file_path>
 ```
-python3 showexif.py --image_path /Volumes/NTFS05TB/System_Files/_ENT/OK/MOV/202011/20201115/20201115_163714_exif.mov
+
+### Example
+For example, to view metadata for a file `20201115_163714_exif.mov`:
+```bash
+python3 showexif.py --image_path /path/to/20201115_163714_exif.mov
+```
+
+### Sample Output
+```
 EXIF information:
 [ExifTool]      ExifToolVersion: 12.60
 [ExifTool]      Warning: [minor] The ExtractEmbedded option may find more tags in the media data
@@ -99,3 +152,14 @@ EXIF information:
 [Composite]     Rotation: 90
 [Composite]     GPSPosition: -00.2835 -00.6656
 ```
+
+## Contributing
+
+Feel free to open issues or pull requests to improve the tool. Contributions are welcome!
+
+## License
+
+This project is licensed under the [GPL-3.0 License](LICENSE).
+
+
+
