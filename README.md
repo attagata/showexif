@@ -5,9 +5,14 @@
 
 ## Features
 
-- Extract detailed Exif metadata from image and video files.
-- Compatible with a wide range of file formats, including MOV and MP4.
-- Provides detailed metadata, including file properties, GPS data, and more.
+v1.1.0
+   - Turn user messages to language to portuguese
+   - Google maps url when there is a location on EXIF
+
+v1.0.0
+   - Extract detailed Exif metadata from image and video files.
+   - Compatible with a wide range of file formats, including MOV and MP4.
+   - Provides detailed metadata, including file properties, GPS data, and more.
 
 ## Requirements
 
